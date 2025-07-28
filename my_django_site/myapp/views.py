@@ -10,38 +10,58 @@ def main_page(request: HttpRequest) -> HttpResponse:
 def my_feed(request: HttpRequest) -> HttpResponse:
     return HttpResponse('This is your main feed page!')
 
-def article_id(request: HttpRequest, id:int) -> HttpResponse:
-    return HttpResponse(f"This is article #{id}")
+def article_id(request: HttpRequest, article_id:int) -> HttpResponse:
+    return HttpResponse(f"This is article #{article_id}")
 
-def article_id_delete(request: HttpRequest, id:int) -> HttpResponse:
-    return HttpResponse(f"This is an after deleting page of article #{id}")
+def article_id_delete(request: HttpRequest, article_id:int) -> HttpResponse:
+    return HttpResponse(f"This is an after deleting page of article #{article_id}")
 
-def article_id_comment(request: HttpRequest, id:int) -> HttpResponse:
-    return HttpResponse(f"This is a page to write a comment to article #{id}")
+def article_id_comment(request: HttpRequest, article_id:int) -> HttpResponse:
+    return HttpResponse(f"This is a adress to write a comment to article #{article_id}")
+
+def article_id_update(request: HttpRequest,article_id ) -> HttpResponse:
+    return HttpResponse(f'This is a page to updating #{article_id} article')
+
+def article_id_delete(request: HttpRequest,article_id ) -> HttpResponse:
+    return HttpResponse(f'This is an adress to deleting #{article_id} article')
+
+def create(request: HttpRequest ) -> HttpResponse:
+    return HttpResponse(f'This is a page for creating an article')
+
+def topics(request: HttpRequest ) -> HttpResponse:
+    return HttpResponse(f'This is a page with topics')
+
+def topics_articles(request: HttpRequest,topic_id ) -> HttpResponse:
+    return HttpResponse(f'This is a page with articles for #{topic_id} topic')
+
+def topics_articles_subscribe(request: HttpRequest,topic_id ) -> HttpResponse:
+    return HttpResponse(f'This is an adress for subscribing to {topic_id} topic ')
+
+def topics_articles_unsubscribe(request: HttpRequest,topic_id ) -> HttpResponse:
+    return HttpResponse(f'This is an adress for unsubscribing to {topic_id} topic ')
+
+def profile(request: HttpRequest) -> HttpResponse:
+    return HttpResponse('This is users page with list of his subscriptions')
+
+def register(request: HttpRequest) -> HttpResponse:
+    return HttpResponse('This is register page')
+
+def set_password(request: HttpRequest) -> HttpResponse:
+    return HttpResponse('This is setting password page')
+
+def login(request: HttpRequest) -> HttpResponse:
+    return HttpResponse('This is loging page')
+
+def logout(request: HttpRequest) -> HttpResponse:
+    return HttpResponse('This is logout adress')
 
 
-class MyClass:
-    string = ''
-
-    def __init__(self, s):
-        self.string = s
 
 
-def index(request: HttpRequest) -> HttpResponse:
-    my_num = 33
-    my_str = 'some string'
-    my_dict = {"some_key": "some_value"}
-    my_list = ['list_first_item', 'list_second_item', 'list_third_item']
-    my_set = {'set_first_item', 'set_second_item', 'set_third_item'}
-    my_tuple = ('tuple_first_item', 'tuple_second_item', 'tuple_third_item')
-    my_class = MyClass('class string')
-    
-    return render(request, 'index.html', {
-        'my_num': my_num,
-        'my_str': my_str,
-        'my_dict': my_dict,
-        'my_list': my_list,
-        'my_set': my_set,
-        'my_tuple': my_tuple,
-        'my_class': my_class,
-    })
+
+
+
+
+
+
+
