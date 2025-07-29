@@ -4,7 +4,9 @@ from django.http import HttpResponse, HttpRequest
 
 
 def main_page(request: HttpRequest) -> HttpResponse:
-    return HttpResponse('This is main page!')
+    return  render(request, 'base.html', {
+        'greet': 'privet'
+    })
 
 
 def my_feed(request: HttpRequest) -> HttpResponse:

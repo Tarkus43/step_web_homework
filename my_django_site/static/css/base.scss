@@ -1,0 +1,12 @@
+@import url(utils/_App.scss);
+
+.logo {
+  max-width: 20vh;
+}
+
+.nav_list {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 10vh;
+}
