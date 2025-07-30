@@ -1,12 +1,44 @@
-@import url(utils/_App.scss);
+@use "utils/App";
+@use "utils/root.scss" as *;
 
 .logo {
-  max-width: 20vh;
+  max-width: 15vh;
 }
 
 .nav_list {
   display: flex;
   align-items: center;
   flex-direction: row;
-  gap: 10vh;
+  gap: 5vh;
+}
+
+nav {
+  font-size: large;
+  padding: 2vh;
+  display: flex;
+  align-items: center;
+  background-color: $dark_font;
+  justify-content: space-between;
+  ul {
+    li {
+      background-color: $accent;
+      padding: 1vh 3vh;
+      border-radius: 10px;
+      a {
+        color: $dark_font;
+      }
+    }
+  }
+}
+
+.profile_list {
+  display: flex;
+  align-items: center;
+  gap: 5vh;
+  margin-right: 2vh;
+}
+
+header {
+  background-color: $darker;
+  height: auto;
 }

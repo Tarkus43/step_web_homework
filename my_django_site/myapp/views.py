@@ -4,8 +4,8 @@ from django.http import HttpResponse, HttpRequest
 
 
 def main_page(request: HttpRequest) -> HttpResponse:
-    return  render(request, 'base.html', {
-        'greet': 'privet'
+    return  render(request, 'main.html', {
+        
     })
 
 
