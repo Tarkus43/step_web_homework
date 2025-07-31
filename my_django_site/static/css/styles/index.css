@@ -130,3 +130,28 @@ header {
   color: #fafafa;
   height: 100%;
 }
+
+.create_info {
+  color: #fafafa;
+  font-size: 5vh;
+  padding: 5vh;
+}
+
+.create_title {
+  color: #fafafa;
+}
+
+.create_header {
+  min-width: 50vh;
+  background-color: rgb(30, 30, 30);
+  margin: 0 20vh;
+  padding: 5vh 9vh;
+  border: 2vh solid #38876f;
+}
+
+.create_main {
+  margin: 0 20vh;
+  border: 2vh solid #38876f;
+  color: #fafafa;
+  height: 100%;
+}

@@ -1,0 +1,18 @@
+@use "../utils/root" as *;
+@use "../utils/mixins" as *;
+
+.create_info {
+  @include info;
+}
+
+.create_title {
+  @include title;
+}
+
+.create_header {
+  @include header;
+}
+
+.create_main {
+  @include main;
+}

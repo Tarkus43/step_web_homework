@@ -30,7 +30,9 @@ def article_id_delete(request: HttpRequest,article_id ) -> HttpResponse:
     return HttpResponse(f'This is an adress to deleting #{article_id} article')
 
 def create(request: HttpRequest ) -> HttpResponse:
-    return HttpResponse(f'This is a page for creating an article')
+    return  render(request, 'components/create.html', {
+        
+    })
 
 def topics(request: HttpRequest ) -> HttpResponse:
     return HttpResponse(f'This is a page with topics')
