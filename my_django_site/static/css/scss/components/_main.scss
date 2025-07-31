@@ -1,27 +1,18 @@
 @use "../utils/root" as *;
+@use "../utils/mixins" as *;
 
 .main_info {
-  color: $light_font;
-  font-size: large;
-  padding: 5vh;
+  @include info;
 }
 
 .main_title {
-  color: $light_font;
+  @include title;
 }
 
 .main_header {
-  min-width: 50vh;
-  background-color: $darker;
-  margin: 0 20vh;
-  padding: 5vh 9vh;
-  border: 2vh solid $accent;
-  backdrop-filter: blur(15px);
+  @include header;
 }
 
 .main_main {
-  margin: 0 20vh;
-  border: 2vh solid $accent;
-  color: $light_font;
-  height: 100%;
+  @include main;
 }

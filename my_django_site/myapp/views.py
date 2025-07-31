@@ -4,13 +4,15 @@ from django.http import HttpResponse, HttpRequest
 
 
 def main_page(request: HttpRequest) -> HttpResponse:
-    return  render(request, 'main.html', {
+    return  render(request, 'components/main.html', {
         
     })
 
 
 def my_feed(request: HttpRequest) -> HttpResponse:
-    return HttpResponse('This is your main feed page!')
+    return  render(request, 'components/feed.html', {
+        
+    })
 
 def article_id(request: HttpRequest, article_id:int) -> HttpResponse:
     return HttpResponse(f"This is article #{article_id}")

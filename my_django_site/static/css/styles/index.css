@@ -83,7 +83,7 @@ header {
 
 .main_info {
   color: #fafafa;
-  font-size: large;
+  font-size: 5vh;
   padding: 5vh;
 }
 
@@ -97,10 +97,34 @@ header {
   margin: 0 20vh;
   padding: 5vh 9vh;
   border: 2vh solid #38876f;
-  backdrop-filter: blur(15px);
 }
 
 .main_main {
+  margin: 0 20vh;
+  border: 2vh solid #38876f;
+  color: #fafafa;
+  height: 100%;
+}
+
+.feed_header {
+  min-width: 50vh;
+  background-color: rgb(30, 30, 30);
+  margin: 0 20vh;
+  padding: 5vh 9vh;
+  border: 2vh solid #38876f;
+}
+
+.feed_info {
+  color: #fafafa;
+  font-size: 5vh;
+  padding: 5vh;
+}
+
+.feed_title {
+  color: #fafafa;
+}
+
+.feed_main {
   margin: 0 20vh;
   border: 2vh solid #38876f;
   color: #fafafa;
