@@ -35,7 +35,9 @@ def create(request: HttpRequest ) -> HttpResponse:
     })
 
 def topics(request: HttpRequest ) -> HttpResponse:
-    return HttpResponse(f'This is a page with topics')
+    return  render(request, 'components/topics.html', {
+        
+    })
 
 def topics_articles(request: HttpRequest,topic_id ) -> HttpResponse:
     return HttpResponse(f'This is a page with articles for #{topic_id} topic')
@@ -47,7 +49,9 @@ def topics_articles_unsubscribe(request: HttpRequest,topic_id ) -> HttpResponse:
     return HttpResponse(f'This is an adress for unsubscribing to {topic_id} topic ')
 
 def profile(request: HttpRequest) -> HttpResponse:
-    return HttpResponse('This is users page with list of his subscriptions')
+    return  render(request, 'components/profile.html', {
+        
+    })
 
 def register(request: HttpRequest) -> HttpResponse:
     return HttpResponse('This is register page')
