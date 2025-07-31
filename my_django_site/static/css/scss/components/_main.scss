@@ -11,9 +11,17 @@
 }
 
 .main_header {
+  min-width: 50vh;
   background-color: $darker;
-  margin: 0 40vh;
-  padding: 5vh 10vh;
-  border: 5vh solid $accent;
+  margin: 0 20vh;
+  padding: 5vh 9vh;
+  border: 2vh solid $accent;
   backdrop-filter: blur(15px);
+}
+
+.main_main {
+  margin: 0 20vh;
+  border: 2vh solid $accent;
+  color: $light_font;
+  height: 100%;
 }

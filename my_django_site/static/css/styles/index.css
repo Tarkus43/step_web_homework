@@ -92,9 +92,17 @@ header {
 }
 
 .main_header {
+  min-width: 50vh;
   background-color: rgb(30, 30, 30);
-  margin: 0 40vh;
-  padding: 5vh 10vh;
-  border: 5vh solid #38876f;
+  margin: 0 20vh;
+  padding: 5vh 9vh;
+  border: 2vh solid #38876f;
   backdrop-filter: blur(15px);
+}
+
+.main_main {
+  margin: 0 20vh;
+  border: 2vh solid #38876f;
+  color: #fafafa;
+  height: 100%;
 }
