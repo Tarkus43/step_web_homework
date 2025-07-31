@@ -1,0 +1,19 @@
+@use "../utils/root" as *;
+
+.main_info {
+  color: $light_font;
+  font-size: large;
+  padding: 5vh;
+}
+
+.main_title {
+  color: $light_font;
+}
+
+.main_header {
+  background-color: $darker;
+  margin: 0 40vh;
+  padding: 5vh 10vh;
+  border: 5vh solid $accent;
+  backdrop-filter: blur(15px);
+}

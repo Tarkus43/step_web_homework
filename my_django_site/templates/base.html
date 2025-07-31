@@ -6,7 +6,7 @@
     {% load static %}
     <link
       rel="stylesheet"
-      href="{% static 'styles/base.min.css' %}?v={{ timestamp } %}"
+      href="{% static 'css/styles/index.min.css' %}?v={{ timestamp } %}"
     />
     <title>{% block title %} {% endblock %}</title>
   </head>
@@ -28,7 +28,7 @@
         <li><a href="{% url 'logout' %}">logout</a></li>
       </ul>
     </nav>
-    <header>{% block header %} {% endblock %}</header>
+    {% block header %} {% endblock %}
     <main>{% block main %} {% endblock %}</main>
     <footer></footer>
   </body>
