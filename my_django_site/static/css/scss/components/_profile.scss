@@ -1,0 +1,18 @@
+@use "../utils/root" as *;
+@use "../utils/mixins" as *;
+
+.profile_info {
+  @include info;
+}
+
+.profile_title {
+  @include title;
+}
+
+.profile_header {
+  @include header;
+}
+
+.profile_main {
+  @include main;
+}

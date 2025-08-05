@@ -60,7 +60,9 @@ def set_password(request: HttpRequest) -> HttpResponse:
     return HttpResponse('This is setting password page')
 
 def login(request: HttpRequest) -> HttpResponse:
-    return HttpResponse('This is loging page')
+    return  render(request, 'components/login.html', {
+        
+    })
 
 def logout(request: HttpRequest) -> HttpResponse:
     return HttpResponse('This is logout adress')
