@@ -15,7 +15,9 @@ def my_feed(request: HttpRequest) -> HttpResponse:
     })
 
 def article_id(request: HttpRequest, article_id:int) -> HttpResponse:
-    return HttpResponse(f"This is article #{article_id}")
+    return render(request, 'components/article.html', { 
+        'id':article_id,
+    })
 
 def article_id_delete(request: HttpRequest, article_id:int) -> HttpResponse:
     return HttpResponse(f"This is an after deleting page of article #{article_id}")
