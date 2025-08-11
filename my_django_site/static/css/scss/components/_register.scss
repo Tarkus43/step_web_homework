@@ -1,0 +1,23 @@
+@use "../utils/App";
+@use "../utils/root" as *;
+@use "../utils/mixins" as *;
+
+.register_form{
+    @include form
+}
+
+.register_info {
+  @include info;
+}
+
+.register_title {
+  @include title;
+}
+
+.register_header {
+  @include header;
+}
+
+.register_main {
+  @include main;
+}

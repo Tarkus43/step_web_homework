@@ -60,7 +60,7 @@ def profile(request: HttpRequest) -> HttpResponse:
     })
 
 def register(request: HttpRequest) -> HttpResponse:
-    return HttpResponse('This is register page')
+    return render(request,'components/register.html')
 
 def set_password(request: HttpRequest) -> HttpResponse:
     return HttpResponse('This is setting password page')

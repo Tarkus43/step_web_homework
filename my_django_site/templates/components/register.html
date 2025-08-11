@@ -1,0 +1,23 @@
+{% extends 'base.html' %} 
+
+{% block title %} register {% endblock %}
+
+{% block header %}
+<header class='register_header'>
+    <form class="register_form" action="">
+            <p>
+                <label for="name">Enter your name</label>
+                <input type="text" name="name" required>
+            </p>
+            <p>
+                <label for="email">Enter email:</label>
+                <input type="email" name="email" id="email" required>
+            </p>
+            <p>
+                <label for="password">Enter password:</label>
+                <input type="password" name="password" required>
+            </p>
+            <button class="register_form_button" type="submit">start your journey</button>
+        </form>
+</header>
+{% endblock%}

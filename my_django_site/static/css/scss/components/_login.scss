@@ -24,36 +24,9 @@
 }
 
 .login_form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  p {
-    display: flex;
-    flex-direction: column;
-  }
-
-  label {
-    font-size: 4vh;
-  }
-  input {
-    font-size: 4vh;
-  }
+  @include form
 }
 
 .login_back {
   scale: 2;
-}
-
-.login_form_button {
-  font-size: 4vh;
-  min-width: 49vh;
-  background-color: $accent;
-  margin: 2vh;
-  border: 3px solid $grass;
-}
-
-.login_form_button:hover {
-  background-color: $grass;
-  border: 3px solid $accent;
 }

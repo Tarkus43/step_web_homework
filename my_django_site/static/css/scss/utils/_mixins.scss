@@ -24,3 +24,36 @@
 @mixin title {
   color: $light_font;
 }
+
+@mixin form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  p {
+    display: flex;
+    flex-direction: column;
+    color: $light_font;
+  }
+
+  label {
+    font-size: 4vh;
+  }
+  input {
+    font-size: 4vh;
+  }
+
+  button{
+    font-size: 4vh;
+    min-width: 49vh;
+    background-color: $accent;
+    margin: 2vh;
+    border: 3px solid $grass;
+  }
+
+  button:hover{
+    background-color: $grass;
+    border: 3px solid $accent;
+    color: $light_font;
+  }
+}

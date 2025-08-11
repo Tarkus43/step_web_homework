@@ -225,6 +225,7 @@ header {
 .login_form p {
   display: flex;
   flex-direction: column;
+  color: #fafafa;
 }
 .login_form label {
   font-size: 4vh;
@@ -232,22 +233,21 @@ header {
 .login_form input {
   font-size: 4vh;
 }
-
-.login_back {
-  scale: 2;
-}
-
-.login_form_button {
+.login_form button {
   font-size: 4vh;
   min-width: 49vh;
   background-color: #38876f;
   margin: 2vh;
   border: 3px solid #0e2d21;
 }
-
-.login_form_button:hover {
+.login_form button:hover {
   background-color: #0e2d21;
   border: 3px solid #38876f;
+  color: #fafafa;
+}
+
+.login_back {
+  scale: 2;
 }
 
 .article_header {
@@ -344,6 +344,61 @@ header {
 }
 
 .update_main {
+  margin: 0 20vh;
+  border: 2vh solid #38876f;
+  color: #fafafa;
+  height: 100%;
+}
+
+.register_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.register_form p {
+  display: flex;
+  flex-direction: column;
+  color: #fafafa;
+}
+.register_form label {
+  font-size: 4vh;
+}
+.register_form input {
+  font-size: 4vh;
+}
+.register_form button {
+  font-size: 4vh;
+  min-width: 49vh;
+  background-color: #38876f;
+  margin: 2vh;
+  border: 3px solid #0e2d21;
+}
+.register_form button:hover {
+  background-color: #0e2d21;
+  border: 3px solid #38876f;
+  color: #fafafa;
+}
+
+.register_info {
+  color: #fafafa;
+  font-size: 5vh;
+  padding: 5vh;
+}
+
+.register_title {
+  color: #fafafa;
+}
+
+.register_header {
+  min-width: 50vh;
+  background-color: rgb(30, 30, 30);
+  margin: 0 20vh;
+  padding: 5vh 9vh;
+  border: 2vh solid #38876f;
+}
+
+.register_main {
   margin: 0 20vh;
   border: 2vh solid #38876f;
   color: #fafafa;
