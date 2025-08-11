@@ -6,7 +6,7 @@
     {% load static %}
     <link
       rel="stylesheet"
-      href="{% static 'css/styles/index.min.css' %}?v={{ timestamp } %}"
+      href="{% static 'css/styles/index.min.css' %}?v={{ timestamp }} %}"
     />
     <title>{% block title %} {% endblock %}</title>
   </head>
@@ -14,7 +14,7 @@
     <nav>
       <ul class="nav_list">
         <li><a href="{% url 'main_page' %}"
-          ><img class="logo" src="{% static 'img/logo.jpg' %}" alt="didnt found"
+          ><img class="logo" src="{% static 'img/logo.jpg'%}" alt="didnt found"
         /></a></li>
         <li><a href="{% url 'my_feed' %}">feed</a></li>
         <li><a href="#">find article</a></li>
