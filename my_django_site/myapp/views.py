@@ -42,7 +42,9 @@ def topics(request: HttpRequest ) -> HttpResponse:
     })
 
 def topics_articles(request: HttpRequest,topic_id ) -> HttpResponse:
-    return HttpResponse(f'This is a page with articles for #{topic_id} topic')
+    return render(request, 'components/topics_articles.html', {
+        'id': topic_id
+    })
 
 def topics_articles_subscribe(request: HttpRequest,topic_id ) -> HttpResponse:
     return HttpResponse(f'This is an adress for subscribing to {topic_id} topic ')

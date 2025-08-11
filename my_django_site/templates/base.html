@@ -13,9 +13,9 @@
   <body>
     <nav>
       <ul class="nav_list">
-        <a href="{% url 'main_page' %}"
-          ><img class="logo" src="../static/img/logo.jpg" alt=""
-        /></a>
+        <li><a href="{% url 'main_page' %}"
+          ><img class="logo" src="{% static 'img/logo.jpg' %}" alt="didnt found"
+        /></a></li>
         <li><a href="{% url 'my_feed' %}">feed</a></li>
         <li><a href="#">find article</a></li>
         <li><a href="{% url 'create' %}">create articles</a></li>
