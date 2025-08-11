@@ -28,7 +28,9 @@ def article_id_comment(request: HttpRequest, article_id:int) -> HttpResponse:
     return HttpResponse(f"This is a adress to write a comment to article #{article_id}")
 
 def article_id_update(request: HttpRequest,article_id ) -> HttpResponse:
-    return HttpResponse(f'This is a page to updating #{article_id} article')
+    return render(request, 'components/update.html',{
+        'id': article_id
+    })
 
 
 def create(request: HttpRequest ) -> HttpResponse:
