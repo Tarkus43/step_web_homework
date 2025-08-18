@@ -63,7 +63,7 @@ def register(request: HttpRequest) -> HttpResponse:
     return render(request,'components/register.html')
 
 def set_password(request: HttpRequest) -> HttpResponse:
-    return HttpResponse('This is setting password page')
+    return render(request, 'components/password.html')
 
 def login(request: HttpRequest) -> HttpResponse:
     return  render(request, 'components/login.html', {
