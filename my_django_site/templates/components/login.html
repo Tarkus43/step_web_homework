@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link
+      rel="stylesheet",
+      href="{% static 'css/styles/index.min.css' %}?v={{ timestamp } %}"/>
+    <title>login</title>
+</head>
+<body>
+    <nav class="login_nav">
+        <a class="login_back" href="{% url 'main_page' %}"><span class="material-symbols-outlined">
+arrow_back
+</span></a>
+    </nav>
+    <header class="login_header" >
+        <h1 class="login_title">Login page</h1>
+    </header>
+    <main class="login_main">
+        <form class="login_form" action="">
+            <p>
+                <label for="name">Enter your name</label>
+                <input type="text" name="name" required>
+            </p>
+            <p>
+                <label for="password">Enter password:</label>
+                <input type="password" name="password" required>
+            </p>
+            <button class="login_form_button" type="submit">login</button>
+        </form>
+    </main>
+    
+</body>
+</html>

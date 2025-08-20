@@ -1,0 +1,19 @@
+@use "../utils/App";
+@use "../utils/root" as *;
+@use "../utils/mixins" as *;
+
+.topics_articles_info {
+  @include info;
+}
+
+.topics_articles_title {
+  @include title;
+}
+
+.topics_articles_header {
+  @include header;
+}
+
+.topics_articles_main {
+  @include main;
+}

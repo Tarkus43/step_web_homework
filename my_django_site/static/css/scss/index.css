@@ -1,0 +1,406 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background-color: rgb(45, 45, 45);
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.logo {
+  max-width: 15vh;
+}
+
+.nav_list {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 5vh;
+}
+
+nav {
+  font-size: large;
+  padding: 2vh;
+  display: flex;
+  align-items: center;
+  background-color: #1a1a1a;
+  justify-content: space-between;
+}
+nav ul li {
+  background-color: #38876f;
+  padding: 1vh 3vh;
+  border-radius: 10px;
+}
+nav ul li a {
+  color: #1a1a1a;
+}
+
+.profile_list {
+  display: flex;
+  align-items: center;
+  gap: 5vh;
+  margin-right: 2vh;
+}
+
+header {
+  background-color: rgb(30, 30, 30);
+  height: auto;
+}
+
+.main_info {
+  color: #fafafa;
+  font-size: 5vh;
+  padding: 5vh;
+}
+
+.main_title {
+  color: #fafafa;
+}
+
+.main_header {
+  min-width: 50vh;
+  background-color: rgb(30, 30, 30);
+  margin: 0 20vh;
+  padding: 5vh 9vh;
+  border: 2vh solid #38876f;
+}
+
+.main_main {
+  margin: 0 20vh;
+  border: 2vh solid #38876f;
+  color: #fafafa;
+  height: 100%;
+}
+
+.feed_header {
+  min-width: 50vh;
+  background-color: rgb(30, 30, 30);
+  margin: 0 20vh;
+  padding: 5vh 9vh;
+  border: 2vh solid #38876f;
+}
+
+.feed_info {
+  color: #fafafa;
+  font-size: 5vh;
+  padding: 5vh;
+}
+
+.feed_title {
+  color: #fafafa;
+}
+
+.feed_main {
+  margin: 0 20vh;
+  border: 2vh solid #38876f;
+  color: #fafafa;
+  height: 100%;
+}
+
+.create_info {
+  color: #fafafa;
+  font-size: 5vh;
+  padding: 5vh;
+}
+
+.create_title {
+  color: #fafafa;
+}
+
+.create_header {
+  min-width: 50vh;
+  background-color: rgb(30, 30, 30);
+  margin: 0 20vh;
+  padding: 5vh 9vh;
+  border: 2vh solid #38876f;
+}
+
+.create_main {
+  margin: 0 20vh;
+  border: 2vh solid #38876f;
+  color: #fafafa;
+  height: 100%;
+}
+
+.topics_info {
+  color: #fafafa;
+  font-size: 5vh;
+  padding: 5vh;
+}
+
+.topics_title {
+  color: #fafafa;
+}
+
+.topics_header {
+  min-width: 50vh;
+  background-color: rgb(30, 30, 30);
+  margin: 0 20vh;
+  padding: 5vh 9vh;
+  border: 2vh solid #38876f;
+}
+
+.topics_main {
+  margin: 0 20vh;
+  border: 2vh solid #38876f;
+  color: #fafafa;
+  height: 100%;
+}
+
+.profile_info {
+  color: #fafafa;
+  font-size: 5vh;
+  padding: 5vh;
+}
+
+.profile_title {
+  color: #fafafa;
+}
+
+.profile_header {
+  min-width: 50vh;
+  background-color: rgb(30, 30, 30);
+  margin: 0 20vh;
+  padding: 5vh 9vh;
+  border: 2vh solid #38876f;
+}
+
+.profile_main {
+  margin: 0 20vh;
+  border: 2vh solid #38876f;
+  color: #fafafa;
+  height: 100%;
+}
+
+.login_nav {
+  height: 10vh;
+  padding: 0 5vh;
+}
+
+.login_main {
+  margin: 0 20vh;
+  border: 2vh solid #38876f;
+  color: #fafafa;
+  height: 100%;
+  margin: 0 50vh;
+  height: auto;
+  padding: 10vh;
+}
+
+.login_header {
+  min-width: 50vh;
+  background-color: rgb(30, 30, 30);
+  margin: 0 20vh;
+  padding: 5vh 9vh;
+  border: 2vh solid #38876f;
+  margin: 0 50vh;
+}
+
+.login_title {
+  color: #fafafa;
+}
+
+.login_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.login_form p {
+  display: flex;
+  flex-direction: column;
+  color: #fafafa;
+}
+.login_form label {
+  font-size: 4vh;
+}
+.login_form input {
+  font-size: 4vh;
+}
+.login_form button {
+  font-size: 4vh;
+  min-width: 49vh;
+  background-color: #38876f;
+  margin: 2vh;
+  border: 3px solid #0e2d21;
+}
+.login_form button:hover {
+  background-color: #0e2d21;
+  border: 3px solid #38876f;
+  color: #fafafa;
+}
+
+.login_back {
+  scale: 2;
+}
+
+.article_header {
+  min-width: 50vh;
+  background-color: rgb(30, 30, 30);
+  margin: 0 20vh;
+  padding: 5vh 9vh;
+  border: 2vh solid #38876f;
+}
+
+.article_info {
+  color: #fafafa;
+  font-size: 5vh;
+  padding: 5vh;
+}
+
+.article_title {
+  color: #fafafa;
+}
+
+.article_main {
+  margin: 0 20vh;
+  border: 2vh solid #38876f;
+  color: #fafafa;
+  height: 100%;
+}
+
+.topics_articles_info {
+  color: #fafafa;
+  font-size: 5vh;
+  padding: 5vh;
+}
+
+.topics_articles_title {
+  color: #fafafa;
+}
+
+.topics_articles_header {
+  min-width: 50vh;
+  background-color: rgb(30, 30, 30);
+  margin: 0 20vh;
+  padding: 5vh 9vh;
+  border: 2vh solid #38876f;
+}
+
+.topics_articles_main {
+  margin: 0 20vh;
+  border: 2vh solid #38876f;
+  color: #fafafa;
+  height: 100%;
+}
+
+.after_delete_info {
+  color: #fafafa;
+  font-size: 5vh;
+  padding: 5vh;
+}
+
+.after_delete_title {
+  color: #fafafa;
+}
+
+.after_delete_header {
+  min-width: 50vh;
+  background-color: rgb(30, 30, 30);
+  margin: 0 20vh;
+  padding: 5vh 9vh;
+  border: 2vh solid #38876f;
+}
+
+.after_delete_main {
+  margin: 0 20vh;
+  border: 2vh solid #38876f;
+  color: #fafafa;
+  height: 100%;
+}
+
+.update_info {
+  color: #fafafa;
+  font-size: 5vh;
+  padding: 5vh;
+}
+
+.update_title {
+  color: #fafafa;
+}
+
+.update_header {
+  min-width: 50vh;
+  background-color: rgb(30, 30, 30);
+  margin: 0 20vh;
+  padding: 5vh 9vh;
+  border: 2vh solid #38876f;
+}
+
+.update_main {
+  margin: 0 20vh;
+  border: 2vh solid #38876f;
+  color: #fafafa;
+  height: 100%;
+}
+
+.register_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.register_form p {
+  display: flex;
+  flex-direction: column;
+  color: #fafafa;
+}
+.register_form label {
+  font-size: 4vh;
+}
+.register_form input {
+  font-size: 4vh;
+}
+.register_form button {
+  font-size: 4vh;
+  min-width: 49vh;
+  background-color: #38876f;
+  margin: 2vh;
+  border: 3px solid #0e2d21;
+}
+.register_form button:hover {
+  background-color: #0e2d21;
+  border: 3px solid #38876f;
+  color: #fafafa;
+}
+
+.register_info {
+  color: #fafafa;
+  font-size: 5vh;
+  padding: 5vh;
+}
+
+.register_title {
+  color: #fafafa;
+}
+
+.register_header {
+  min-width: 50vh;
+  background-color: rgb(30, 30, 30);
+  margin: 0 20vh;
+  padding: 5vh 9vh;
+  border: 2vh solid #38876f;
+}
+
+.register_main {
+  margin: 0 20vh;
+  border: 2vh solid #38876f;
+  color: #fafafa;
+  height: 100%;
+}/*# sourceMappingURL=index.css.map */

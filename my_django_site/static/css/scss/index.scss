@@ -1,0 +1,15 @@
+@use "utils/root";
+
+@use "base";
+@use "components/main";
+@use "components/feed";
+@use "components/create";
+@use "components/topics";
+@use "components/profile";
+@use "components/login";
+@use "components/article";
+@use "components/topics_articles";
+@use "components/after_delete";
+@use "components/update";
+@use "components/register";
+@use "components/password";

@@ -1,0 +1,19 @@
+@use "../utils/App";
+@use "../utils/root" as *;
+@use "../utils/mixins" as *;
+
+.after_delete_info {
+  @include info;
+}
+
+.after_delete_title {
+  @include title;
+}
+
+.after_delete_header {
+  @include header;
+}
+
+.after_delete_main {
+  @include main;
+}

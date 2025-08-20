@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% load static %}
+    <link
+      rel="stylesheet"
+      href="{% static 'css/styles/index.min.css' %}?v={{ timestamp }} %}"
+    />
+    <title>{% block title %} {% endblock %}</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="nav_list">
+        <li><a href="{% url 'main_page' %}"
+          ><img class="logo" src="{% static 'img/logo.jpg'%}" alt="didnt found"
+        /></a></li>
+        <li><a href="{% url 'my_feed' %}">feed</a></li>
+        <li><a href="#">find article</a></li>
+        <li><a href="{% url 'create' %}">create articles</a></li>
+        <li><a href="{% url 'topics' %}">discover topics</a></li>
+      </ul>
+
+      <ul class="profile_list">
+        <li><a href="{% url 'profile' %}">profile</a></li>
+        <li><a href="{% url 'register' %}">register</a></li>
+        <li><a href="{% url 'login' %}">login</a></li>
+        <li><a href="{% url 'logout' %}">logout</a></li>
+      </ul>
+    </nav>
+    {% block header %} {% endblock %}
+    {% block main %} {% endblock %}
+    <footer></footer>
+  </body>
+</html>

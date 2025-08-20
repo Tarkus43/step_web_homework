@@ -1,0 +1,32 @@
+@use "../utils/App";
+@use "../utils/root.scss" as *;
+@use "../utils/mixins" as *;
+
+.login_nav {
+  height: 10vh;
+  padding: 0 5vh;
+}
+
+.login_main {
+  @include main;
+  margin: 0 50vh;
+  height: auto;
+  padding: 10vh;
+}
+
+.login_header {
+  @include header;
+  margin: 0 50vh;
+}
+
+.login_title {
+  @include title;
+}
+
+.login_form {
+  @include form
+}
+
+.login_back {
+  scale: 2;
+}

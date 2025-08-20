@@ -1,0 +1,59 @@
+@use "./root" as *;
+
+@mixin header {
+  min-width: 50vh;
+  background-color: $darker;
+  margin: 0 20vh;
+  padding: 5vh 9vh;
+  border: 2vh solid $accent;
+}
+
+@mixin main {
+  margin: 0 20vh;
+  border: 2vh solid $accent;
+  color: $light_font;
+  height: 100%;
+}
+
+@mixin info {
+  color: $light_font;
+  font-size: 5vh;
+  padding: 5vh;
+}
+
+@mixin title {
+  color: $light_font;
+}
+
+@mixin form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  p {
+    display: flex;
+    flex-direction: column;
+    color: $light_font;
+  }
+
+  label {
+    font-size: 4vh;
+  }
+  input {
+    font-size: 4vh;
+  }
+
+  button{
+    font-size: 4vh;
+    min-width: 49vh;
+    background-color: $accent;
+    margin: 2vh;
+    border: 3px solid $grass;
+  }
+
+  button:hover{
+    background-color: $grass;
+    border: 3px solid $accent;
+    color: $light_font;
+  }
+}

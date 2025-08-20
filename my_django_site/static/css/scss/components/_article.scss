@@ -1,0 +1,19 @@
+@use "../utils/App";
+@use "../utils/root.scss" as *;
+@use "../utils/mixins" as *;
+
+.article_header {
+  @include header;
+}
+
+.article_info {
+  @include info;
+}
+
+.article_title {
+  @include title;
+}
+
+.article_main {
+  @include main;
+}

@@ -1,0 +1,19 @@
+@use "../utils/App";
+@use "../utils/root" as *;
+@use "../utils/mixins" as *;
+
+.main_info {
+  @include info;
+}
+
+.main_title {
+  @include title;
+}
+
+.main_header {
+  @include header;
+}
+
+.main_main {
+  @include main;
+}

@@ -1,0 +1,19 @@
+@use "../utils/App";
+@use "../utils/root" as *;
+@use "../utils/mixins" as *;
+
+.update_info {
+  @include info;
+}
+
+.update_title {
+  @include title;
+}
+
+.update_header {
+  @include header;
+}
+
+.update_main {
+  @include main;
+}
